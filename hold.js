@@ -1,7 +1,8 @@
 /*
  * hold.js - jQuery-Plugin for the implementation of anti-spaghetti-style code
- * Author & copyright (C) 2013: Oleg Taranov aka Kujbor, CubeComp Development
- */
+ * Author Oleg Taranov aka Kujbor
+ * Copyright (C) 2013: CubeComp Development
+*/
 (function($) {
 
     "use strict";
