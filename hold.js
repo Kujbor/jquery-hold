@@ -2,7 +2,7 @@
  * hold.js - jQuery plugin for the implementation of anti-spaghetti-style code
  * Author Oleg Taranov aka Kujbor
  * Copyright (C) 2013: CubeComp Development
-*/
+ */
 (function($) {
 
     "use strict";
@@ -16,16 +16,14 @@
                 try {
                     return $.proxy(checkerFunc, that ? that : this)();
                 }
-
                 catch (e) {
                     return false;
                 }
-
-            }
+            };
 
             var current = 0;
 
-            limit = limit ? limit : 1000;
+            limit = limit ? limit : 10000;
 
             (function checker() {
 
@@ -35,27 +33,18 @@
                 }
 
                 if (check()) {
-
                     $.proxy(handlerFunc, that ? that : this)();
-
                 } else {
-
                     window.setTimeout(checker, delay);
-
                 }
-
             })();
 
         } else {
 
             window.setTimeout(function() {
-
                 $.proxy(handlerFunc, that ? that : this)();
-
             }, delay);
-
         }
-
     };
 
-})($);
+})(jQuery);
