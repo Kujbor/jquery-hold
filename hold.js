@@ -3,7 +3,7 @@
  * Author Oleg Taranov aka Kujbor
  * Copyright (C) 2013: CubeComp Development
  */
-define("jquery.hold", ["jquery"], function() {
+define("jquery.hold", ["jquery"], function($) {
 
     "use strict";
 
