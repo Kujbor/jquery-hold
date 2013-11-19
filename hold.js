@@ -46,5 +46,4 @@ define("jquery.hold", ["jquery"], function($) {
             }, delay);
         }
     };
-
 });
